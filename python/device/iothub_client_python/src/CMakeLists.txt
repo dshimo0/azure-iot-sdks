@@ -54,7 +54,7 @@ else()
     )
 endif()
 
-if(${use_wsio})
+if(${use_wsio} AND WIN32)
     file(COPY $ENV{OpenSSLDir}/bin/libeay32.dll DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/../../samples)
     file(COPY $ENV{OpenSSLDir}/bin/ssleay32.dll DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/../../samples)
 endif()

@@ -243,3 +243,4 @@ javawrapper/device/samples/send-event-sample/target
 javawrapper/device/test/target
 javawrapper/device/samples/target
 python/build_all/windows/pyenv.bat
+python/build_all/windows/nuget.exe
