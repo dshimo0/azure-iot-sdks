@@ -19,5 +19,8 @@
     <None Include="..\iothub_client.def">
       <Filter>Source Files</Filter>
     </None>
+    <None Include="..\iothub_client_ws.def">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -188,6 +188,9 @@ Build.wrn
 Buildx86retail.dat
 *.dat
 
+# Linux (Python) build artifacts
+*.so
+
 # Tools EXE that doesn't end up in a typical build directory
 c/common/tools/macro_utils_h_generator/macro_utils_h_generator.exe
 
@@ -239,3 +242,4 @@ javawrapper/device/samples/file-upload-sample/target
 javawrapper/device/samples/send-event-sample/target
 javawrapper/device/test/target
 javawrapper/device/samples/target
+python/build_all/windows/pyenv.bat
