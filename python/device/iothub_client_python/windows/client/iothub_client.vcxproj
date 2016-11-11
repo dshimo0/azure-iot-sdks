@@ -125,7 +125,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;IOTHUB_CLIENT_PYTHON_HTTP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(PYTHON_PATH)\include;..\..\..\..\..\c\iothub_client\inc;..\..\..\..\..\c\c-utility\inc;..\..\..\..\..\c\c-utility\deps\libwebsockets\lib;$(OPENSSL_ROOT_DIR)-1.0.1\include\openssl</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(PYTHON_PATH)\include;..\..\..\..\..\c\iothub_client\inc;..\..\..\..\..\c\c-utility\inc;..\..\..\..\..\c\c-utility\deps\libwebsockets\lib;..\..\..\..\..\c\umqtt\inc;..\..\..\..\..\c\uamqp\inc</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -147,7 +147,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;IOTHUB_CLIENT_PYTHON_HTTP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(PYTHON_PATH)\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(PYTHON_PATH)\include;..\..\..\..\..\c\iothub_client\inc;..\..\..\..\..\c\c-utility\inc;..\..\..\..\..\c\c-utility\deps\libwebsockets\lib;..\..\..\..\..\c\umqtt\inc;..\..\..\..\..\c\uamqp\inc</AdditionalIncludeDirectories>
       <Optimization>MinSpace</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -159,9 +159,9 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>..\$(TargetName).def</ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>$(PYTHON_PATH)\libs</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(PYTHON_PATH)\libs;%USERPROFILE%\cmake_Win32\iothub_client\Release;%USERPROFILE%\cmake_Win32\c-utility\Release;%USERPROFILE%\cmake_Win32\uamqp\Release;%USERPROFILE%\cmake_Win32\umqtt\Release;%USERPROFILE%\cmake_Win32\serializer\Release</AdditionalLibraryDirectories>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
-      <AdditionalDependencies>crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ws2_32.lib;crypt32.lib;winhttp.lib;Secur32.lib;iothub_client.lib;iothub_client_amqp_transport.lib;iothub_client_http_transport.lib;iothub_client_mqtt_transport.lib;aziotsharedutil.lib;uamqp.lib;umqtt.lib;serializer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <CustomBuildStep>
       <Command>Copy $(TargetPath) $(TargetDir)\$(TargetName).pyd</Command>
@@ -176,7 +176,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;IOTHUB_CLIENT_PYTHON_HTTP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(PYTHON_PATH)\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(PYTHON_PATH)\include;..\..\..\..\..\c\iothub_client\inc;..\..\..\..\..\c\c-utility\inc;..\..\..\..\..\c\c-utility\deps\libwebsockets\lib;..\..\..\..\..\c\umqtt\inc;..\..\..\..\..\c\uamqp\inc</AdditionalIncludeDirectories>
       <Optimization>MinSpace</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -188,9 +188,9 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>..\$(TargetName).def</ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>$(PYTHON_PATH)\libs</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(PYTHON_PATH)\libs;%USERPROFILE%\cmake_Win32\iothub_client\Release;%USERPROFILE%\cmake_Win32\c-utility\Release;%USERPROFILE%\cmake_Win32\uamqp\Release;%USERPROFILE%\cmake_Win32\umqtt\Release;%USERPROFILE%\cmake_Win32\serializer\Release</AdditionalLibraryDirectories>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
-      <AdditionalDependencies>crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ws2_32.lib;crypt32.lib;winhttp.lib;Secur32.lib;iothub_client.lib;iothub_client_amqp_transport.lib;iothub_client_http_transport.lib;iothub_client_mqtt_transport.lib;aziotsharedutil.lib;uamqp.lib;umqtt.lib;serializer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <CustomBuildStep>
       <Command>Copy $(TargetPath) $(TargetDir)\$(TargetName).pyd</Command>

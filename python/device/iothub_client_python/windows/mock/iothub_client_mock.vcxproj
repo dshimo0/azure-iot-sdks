@@ -126,7 +126,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>IMPORT_NAME=iothub_client_mock;WIN32;_DEBUG;_WINDOWS;_USRDLL;IOTHUB_CLIENT_PYTHON_HTTP_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(PYTHON_PATH)\include;..\..\src;..\..\..\..\..\c\iothub_client\inc;..\..\..\..\..\c\c-utility\inc;..\..\..\..\..\c\c-utility\deps\libwebsockets\lib;$(OPENSSL_ROOT_DIR)-1.0.1\include\openssl</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(PYTHON_PATH)\include;..\..\src;..\..\..\..\..\c\iothub_client\inc;..\..\..\..\..\c\c-utility\inc;..\..\..\..\..\c\c-utility\deps\libwebsockets\lib</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -148,7 +148,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PreprocessorDefinitions>IMPORT_NAME=iothub_client_mock;WIN32;NDEBUG;_WINDOWS;_USRDLL;IOTHUB_CLIENT_PYTHON_HTTP_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(PYTHON_PATH)\include;..\..\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(PYTHON_PATH)\include;..\..\src;..\..\..\..\..\c\iothub_client\inc;..\..\..\..\..\c\c-utility\inc;..\..\..\..\..\c\c-utility\deps\libwebsockets\lib</AdditionalIncludeDirectories>
       <Optimization>MinSpace</Optimization>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -177,7 +177,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PreprocessorDefinitions>IMPORT_NAME=iothub_client_mock;WIN32;NDEBUG;_WINDOWS;_USRDLL;IOTHUB_CLIENT_PYTHON_HTTP_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(PYTHON_PATH)\include;..\..\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(PYTHON_PATH)\include;..\..\src;..\..\..\..\..\c\iothub_client\inc;..\..\..\..\..\c\c-utility\inc;..\..\..\..\..\c\c-utility\deps\libwebsockets\lib</AdditionalIncludeDirectories>
       <Optimization>MinSpace</Optimization>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -192,7 +192,7 @@
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <CustomBuildStep>
       <Command>Copy $(TargetPath) $(TargetDir)\$(TargetName).pyd</Command>
