@@ -5,7 +5,6 @@ This document describes how to prepare your development environment to use the *
 - [Setup your development environment](#devenv)
 - [Build the samples on Linux](#linux)
 - [Install on Windows using PyPI wheels](#windows-wheels)
-- [Build the samples on Windows using nuget packages](#windows)
 - [Build the samples on Windows using cmake and boost libraries](#windows-cmake)
 - [Sample applications](#samplecode)
 
@@ -54,16 +53,6 @@ Please follow instructions in [Sample applications](#samplecode) to run the Pyth
 > Note: If it is not already installed, you need to install the [Visual C++ Redistributable for Visual Studio 2015][lnk-c-redist].
 
 > Note: If Pip cannot install the package for the specific version of Python installed on your machine, use one of the following options to build the **iothub_client** module.
-
-<a name="windows"/>
-## Build the Python iothub_client module on Windows using Nuget packages (recommended)
-
-The following instructions outline how you can build the libraries in Windows:
-
-1. Open a Visual Studio 2015 x86 Native Tools command prompt and navigate to the folder **python/build_all/windows** in your local copy of the repository.
-2. Run the script `build.cmd` in the **python\\build_all\\windows** directory.
-3. As a result, the `iothub_client.pyd` Python extension module is copied to the **python/device/samples** folder. Follow the instructions in [Sample applications](#samplecode) to run the Python IoT Hub samples.
-4. In order to run the samples with a different Python version (e.g. 32bit vs. 64bit or 2.7 vs. 3.4) please rebuild the `iothub_client.pyd` extension.
 
 <a name="windows-cmake"/>
 ## Build the Python iothub_client module on Windows using cmake and boost libraries 
