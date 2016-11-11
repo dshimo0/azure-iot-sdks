@@ -131,7 +131,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>..\$(TargetName).def</ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>$(PYTHON_PATH)\libs;%USERPROFILE%\cmake_Win32\iothub_client\Release;%USERPROFILE%\cmake_Win32\c-utility\Release;%USERPROFILE%\cmake_Win32\uamqp\Release;%USERPROFILE%\cmake_Win32\umqtt\Release;%USERPROFILE%\cmake_Win32\serializer\Release</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$$(PYTHON_PATH)\libs;%USERPROFILE%\cmake_x64\iothub_client\Release;%USERPROFILE%\cmake_x64\c-utility\Release;%USERPROFILE%\cmake_x64\uamqp\Release;%USERPROFILE%\cmake_x64\umqtt\Release;%USERPROFILE%\cmake_x64\serializer\Release;%USERPROFILE%\cmake_x64\iothub_client\Debug;%USERPROFILE%\cmake_x64\c-utility\Debug;%USERPROFILE%\cmake_x64\uamqp\Debug;%USERPROFILE%\cmake_x64\umqtt\Debug;%USERPROFILE%\cmake_x64\serializer\Debug</AdditionalLibraryDirectories>
       <AdditionalDependencies>ws2_32.lib;crypt32.lib;winhttp.lib;Secur32.lib;iothub_client.lib;iothub_client_amqp_transport.lib;iothub_client_http_transport.lib;iothub_client_mqtt_transport.lib;aziotsharedutil.lib;uamqp.lib;umqtt.lib;serializer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <CustomBuildStep>
@@ -188,7 +188,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>..\$(TargetName).def</ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>$(PYTHON_PATH)\libs;%USERPROFILE%\cmake_Win32\iothub_client\Release;%USERPROFILE%\cmake_Win32\c-utility\Release;%USERPROFILE%\cmake_Win32\uamqp\Release;%USERPROFILE%\cmake_Win32\umqtt\Release;%USERPROFILE%\cmake_Win32\serializer\Release</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$$(PYTHON_PATH)\libs;%USERPROFILE%\cmake_x64\iothub_client\Release;%USERPROFILE%\cmake_x64\c-utility\Release;%USERPROFILE%\cmake_x64\uamqp\Release;%USERPROFILE%\cmake_x64\umqtt\Release;%USERPROFILE%\cmake_x64\serializer\Release;%USERPROFILE%\cmake_x64\iothub_client\Debug;%USERPROFILE%\cmake_x64\c-utility\Debug;%USERPROFILE%\cmake_x64\uamqp\Debug;%USERPROFILE%\cmake_x64\umqtt\Debug;%USERPROFILE%\cmake_x64\serializer\Debug</AdditionalLibraryDirectories>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <AdditionalDependencies>ws2_32.lib;crypt32.lib;winhttp.lib;Secur32.lib;iothub_client.lib;iothub_client_amqp_transport.lib;iothub_client_http_transport.lib;iothub_client_mqtt_transport.lib;aziotsharedutil.lib;uamqp.lib;umqtt.lib;serializer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
